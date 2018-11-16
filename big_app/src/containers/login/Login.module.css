@@ -1,0 +1,14 @@
+
+.Login {
+      text-align: center;
+      align-content: center;
+    background-color: 	#eeeeee;
+    width: 300px;
+    border: 2px solid rgb(204, 89, 13);
+    padding: 25px;
+    margin: 150px auto;
+}
+
+button{
+    margin: 15px auto;
+}
