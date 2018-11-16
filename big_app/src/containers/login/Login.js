@@ -10,11 +10,11 @@ class Login extends Component {
     userNameHandler = (e) => {
         this.setState({ user: e.target.value });
         if (e.key === 'Enter') {
-            this.submithandler();
+            this.submitHandler();
         }
     }
 
-    submithandler = () => {
+    submitHandler = () => {
         this.props.history.push("/dashboard", { user: this.state.user });
     }
 
@@ -27,7 +27,7 @@ class Login extends Component {
                     value={this.state.user}
                     onChange={this.userNameHandler}
                     onKeyPress={this.userNameHandler} />
-                    <button onClick={this.submithandler}>Submit</button>
+                    <button onClick={this.submitHandler}>Submit</button>
                 {/* <Link to={
                     {
                         pathname: "/dashboard",
