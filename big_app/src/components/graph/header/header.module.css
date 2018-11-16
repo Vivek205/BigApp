@@ -1,23 +1,22 @@
-.more-btn {
-    background: none;
-    border: 0 none;
-    line-height: normal;
-    overflow: visible;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+.header{
+    display: flex;
     width: 100%;
-    text-align: left;
-    outline: none;
-    cursor: pointer;
 }
-.more-dot {
-    background-color: #aab8c2;
-    margin: 0 auto;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin-right: 1px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
+
+.text{
+    text-align: left;
+    display: inline;
+    margin: 0px;
+    width: 60%;
+}
+
+.drop{
+    display: inline;
+    width: 20%;
+    margin: 0px 5px;
+    height: 25px;
+}
+.menu{
+    display: inline;
+    width: 20%;
 }

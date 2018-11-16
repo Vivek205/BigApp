@@ -1,1 +1,9 @@
+.donutlegends{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
 
+.sclegends{
+    display: flex;
+}

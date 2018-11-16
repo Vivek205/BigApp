@@ -1,0 +1,13 @@
+.head{
+    
+    padding: 10px 5px 30px 5px;
+    margin: 10px 5px;
+}
+
+.head span{
+    float: left;
+}
+
+input{
+    float: right;
+}

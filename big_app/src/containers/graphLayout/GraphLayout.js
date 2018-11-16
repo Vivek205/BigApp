@@ -7,8 +7,11 @@ class GraphLayout extends Component {
     render() {
         return(
             <>
-            <h1>GraphLayout</h1>
-            <Graph />
+            <div className={css.graphsContainer}>
+            <Graph donut title="Devices"/>
+            <Graph bar title="Demographics"/>
+            <Graph semiCircle title="New Users"/>
+            </div>
             </> 
         );
     }

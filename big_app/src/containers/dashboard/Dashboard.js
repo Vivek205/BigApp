@@ -18,7 +18,6 @@ class DashBoard extends Component {
     render() {
         return (
             <>
-                <h1>DashBoard</h1>
                 <GraphLayout />
                 <OverView />
             </>
