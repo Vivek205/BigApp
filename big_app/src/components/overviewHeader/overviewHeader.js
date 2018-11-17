@@ -1,11 +1,14 @@
 import React from 'react';
 import css from './overviewHeader.module.css';
 
-const overviewHeader = () =>{
+const overviewHeader = (props) =>{
     return(
         <div className={css.head}>
         <span>Overview Data</span>
-        <input type="text" placeholder="Search.."/>
+        <input type="text" 
+        value={props.searchQuery} 
+        placeholder="Search Name.."
+        onChange={props.changed}/>
         </div>
     );
 }
