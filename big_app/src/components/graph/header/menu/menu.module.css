@@ -1,0 +1,140 @@
+/* Page */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.moreMenu {
+    width: 100px;
+}
+
+/* More Button / Dropdown Menu */
+
+.moreBtn,
+.morMenBtn {
+    background: none;
+    border: 0 none;
+    line-height: normal;
+    overflow: visible;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+
+.moreDot {
+    background-color: #aab8c2;
+    margin: 0 auto;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.moreMenu {
+    position: absolute;
+    top: 100%;
+    z-index: 900;
+    float: left;
+    padding: 10px 0;
+    margin-top: 9px;
+    background-color: #fff;
+    border: 1px solid #ccd8e0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    opacity: 0;
+    -webkit-transform: translate(0, 15px) scale(.95);
+    transform: translate(0, 15px) scale(.95);
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    pointer-events: none;
+}
+
+.moreMenuCaret {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    width: 18px;
+    height: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.moreMenuCaretOuter,
+.moreMenuCaretInner {
+    position: absolute;
+    display: inline-block;
+    margin-left: -1px;
+    font-size: 0;
+    line-height: 1;
+}
+
+.moreMenuCaretOuter {
+    border-bottom: 10px solid #c1d0da;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: auto;
+    left: 0;
+    top: 0;
+    width: auto;    
+}
+
+.moreMenuCaretInner {
+    top: 1px;
+    left: 1px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+}
+
+.moreMenuItems {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.moreMenuItem {
+    display: block;
+}
+
+.moreMenuBtn {
+    min-width: 100%;
+    color: #66757f;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px 20px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.moreMenuItem:hover {
+    background-color: #489fe5;
+}
+
+.moreMenuItem:hover .more-menu-btn {
+    color: #fff;
+}
+
+.moreBtn:hover .more-dot,
+.showMoreMenu .more-dot {
+    background-color: #516471;
+}
+
+.showMoreMenu .more-menu {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+    pointer-events: auto;
+}

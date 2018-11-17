@@ -21,13 +21,13 @@ class Login extends Component {
     render() {
         return (
             <div className={css.Login}>
-                <h1 >Sign in in to proceed</h1>
-                <label htmlFor="userName">Username:</label>
-                <input id="userName" type="text"
+                <h1 className={css.txt}>Sign in in to proceed</h1>
+                <label className={css.lbl} htmlFor="userName">Username:</label>
+                <input className={css.ipt} id="userName" type="text"
                     value={this.state.user}
                     onChange={this.userNameHandler}
                     onKeyPress={this.userNameHandler} />
-                    <button onClick={this.submitHandler}>Submit</button>
+                    <button className={css.btn} onClick={this.submitHandler}>Submit</button>
                 {/* <Link to={
                     {
                         pathname: "/dashboard",

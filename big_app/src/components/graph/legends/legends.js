@@ -15,6 +15,7 @@ const legends = (props) =>{
      <div className={style}>
      <Legend type={props.type}/>
      <Legend type={props.type}/>
+     {props.type === "donut"?<Legend type={props.type}/>:""}
      </div>
  );
 }

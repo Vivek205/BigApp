@@ -1,7 +1,7 @@
 
 .Login {
       text-align: center;
-      align-content: center;
+      /* align-content: center; */
     background-color: 	#eeeeee;
     width: 300px;
     border: 2px solid rgb(204, 89, 13);
@@ -9,6 +9,20 @@
     margin: 150px auto;
 }
 
-button{
+.txt{
+
+}
+
+.lbl{
+    display: inline;
+    width:30%;
+}
+
+.ipt{
+    display: inline;
+    width:70%;
+}
+.btn{
     margin: 15px auto;
+    display: block;
 }

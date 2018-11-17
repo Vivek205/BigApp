@@ -1,6 +1,8 @@
 import React from 'react';
 import css from './header.module.css';
 
+import Menu from './menu/menu';
+
 const header = (props) =>{
     return(
     <div className={css.header}>
@@ -10,11 +12,7 @@ const header = (props) =>{
         <option>bbb</option>
         <option>ccc</option>
     </select>
-    <button id={css.moreBtn} className={css.moreBtn} className={css.menu}>
-            <span className={css.moreDot}></span>
-            <span className={css.moreDot}></span>
-            <span className={css.moreDot}></span>
-        </button>
+    <Menu />
     </div>)
 }
 
